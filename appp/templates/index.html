@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+     <form action="{% url 'register' %}">
+    <button type="submit">Go to Register</button>
+  </form>
+  <form action="{% url 'list' %}">
+    <button type="submit">view list</button>
+
+  </form>
+  <h4>📊 Analysis for {{ det.name }}</h4>
+<p>{{ analysis }}</p>
+<a href="{% url 'list' %}" class="btn btn-secondary">Back</a>
+
+</body>
+</html>
